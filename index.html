@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodre Decorater - Premium Indian Event Decor</title>
+    <meta name="description" content="Luxury Indian event decor specializing in weddings, corporate events, festivals, and grand celebrations">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Kodre Decorater</h1>
+                <span class="tagline">Luxury Event Decor</span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#weddings" class="nav-link">Weddings</a></li>
+                <li><a href="#corporate" class="nav-link">Corporate</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Where Dreams Become Grand Celebrations</h1>
+                <p class="hero-subtitle">Transforming moments into unforgettable experiences with premium Indian event decor</p>
+                <div class="hero-actions">
+                    <button class="premium-btn primary" onclick="openQuoteForm()">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Your Event
+                    </button>
+                    <button class="premium-btn secondary" onclick="scrollToSection('gallery')">
+                        <i class="fas fa-images"></i>
+                        View Gallery
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">From intimate gatherings to grand celebrations, we craft perfection</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="weddings">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Wedding Decor</h3>
+                    <p>Royal mandap setups, floral stages, and traditional elegance</p>
+                    <button class="service-btn" onclick="scrollToSection('weddings')">Explore</button>
+                </div>
+                
+                <div class="service-card" data-service="corporate">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional setups for conferences, product launches, and galas</p>
+                    <button class="service-btn" onclick="scrollToSection('corporate')">Explore</button>
+                </div>
+                
+                <div class="service-card" data-service="festivals">
+                    <div class="service-icon">
+                        <i class="fas fa-diwali"></i>
+                    </div>
+                    <h3>Festival Decor</h3>
+                    <p>Diwali, Eid, and other festive celebrations with traditional flair</p>
+                    <button class="service-btn" onclick="openQuoteForm()">Get Quote</button>
+                </div>
+                
+                <div class="service-card" data-service="receptions">
+                    <div class="service-icon">
+                        <i class="fas fa-champagne-glasses"></i>
+                    </div>
+                    <h3>Receptions</h3>
+                    <p>Elegant reception setups with premium lighting and decor</p>
+                    <button class="service-btn" onclick="openQuoteForm()">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Decor Showcase -->
+    <section id="weddings" class="weddings-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Royal Wedding Decor</h2>
+                <p class="section-subtitle">Making your special day truly unforgettable</p>
+            </div>
+            
+            <div class="wedding-features">
+                <div class="wedding-feature">
+                    <div class="feature-image">
+                        <img src="wedding-mandap-photo.jpg" alt="Royal Wedding Decor by Kodre Decorater" class="wedding-decor-image">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Traditional Mandap Designs</h3>
+                        <p>Authentic Indian mandap setups with floral arrangements, drapes, and traditional elements that honor your heritage while adding modern elegance.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Royal floral arrangements</li>
+                            <li><i class="fas fa-check"></i> Traditional drapes and fabrics</li>
+                            <li><i class="fas fa-check"></i> Custom theme integration</li>
+                        </ul>
+                        <button class="premium-btn primary" onclick="openQuoteForm()">
+                            <i class="fas fa-phone"></i>
+                            Consult Designer
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="wedding-feature reverse">
+                    <div class="feature-content">
+                        <h3>Luxury Stage & Lighting</h3>
+                        <p>Professional stage setups with premium lighting, chandeliers, and sound systems that create the perfect ambiance for your wedding celebrations.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Crystal chandeliers</li>
+                            <li><i class="fas fa-check"></i> Professional sound systems</li>
+                            <li><i class="fas fa-check"></i> Dynamic lighting effects</li>
+                        </ul>
+                        <button class="premium-btn primary" onclick="scrollToSection('gallery')">
+                            <i class="fas fa-images"></i>
+                            View Examples
+                        </button>
+                    </div>
+                    <div class="feature-image">
+                        <img src="wedding-decor-new.jpg" alt="Luxury Stage & Lighting by Kodre Decorater" class="wedding-decor-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Events -->
+    <section id="corporate" class="corporate-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Corporate Event Excellence</h2>
+                <p class="section-subtitle">Professional setups that elevate your brand</p>
+            </div>
+            
+            <div class="corporate-grid">
+                <div class="corporate-card">
+                    <div class="corporate-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Conferences & Seminars</h3>
+                    <p>Professional stage setups, branding integration, and sophisticated decor for corporate conferences.</p>
+                </div>
+                
+                <div class="corporate-card">
+                    <div class="corporate-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Product Launches</h3>
+                    <p>Eye-catching setups that highlight your products and create memorable launch experiences.</p>
+                </div>
+                
+                <div class="corporate-card">
+                    <div class="corporate-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Award Ceremonies</h3>
+                    <p>Elegant setups for corporate award nights with premium decor and professional presentation.</p>
+                </div>
+                
+                <div class="corporate-card">
+                    <div class="corporate-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Annual Galas</h3>
+                    <p>Sophisticated decor for corporate galas, networking events, and annual celebrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Celebrations</h2>
+                <p class="section-subtitle">Glimpses of our grand event transformations</p>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="festival">Festivals</button>
+            </div>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Stories</h2>
+                <p class="section-subtitle">Hear from our happy clients</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Regal Celebrations transformed our wedding into a fairytale. The attention to detail and traditional elements were absolutely perfect!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Priya & Rahul</h4>
+                                <span>Wedding Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professional, creative, and reliable. They made our corporate product launch an unforgettable experience for all attendees."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>TechCorp India</h4>
+                                <span>Corporate Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Diwali party decor was absolutely stunning! Our guests were amazed by the traditional yet modern setup."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>The Sharma Family</h4>
+                                <span>Festival Celebration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create Magic Together</h2>
+                <p class="section-subtitle">Get in touch to discuss your dream event</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+919850698989" style="color: var(--dark-wood); text-decoration: none;">+91 98506 98989</a></p>
+                            <p><a href="tel:+919850698989" style="color: var(--dark-wood); text-decoration: none;">+91 98506 98989</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:Kodredecorator@gmail.com" style="color: var(--dark-wood); text-decoration: none;">Kodredecorator@gmail.com</a></p>
+                            <p><a href="mailto:Kodredecorator@gmail.com" style="color: var(--dark-wood); text-decoration: none;">Kodredecorator@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Our Studio</h4>
+                            <p>HOUSE NO 72, KODRE WADA, NEAR</p>
+                            <p>KALBHAIRAVNATH TEMPLE, MUNDHAWA, Pune City</p>
+                            <p><a href="https://maps.google.com/?q=18.533904,73.931702" target="_blank" style="color: var(--gold); text-decoration: none; font-weight: 600;">
+                                <i class="fas fa-map"></i> Get Directions (18.533904, 73.931702)
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="inquiry-form" action="https://formspree.io/f/mgozkwab" method="POST" onsubmit="submitInquiry(event)">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="event-type" required>
+                                <option value="">Select Event Type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="festival">Festival</option>
+                                <option value="reception">Reception</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your event..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="premium-btn primary full-width">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Kodre Decorater</h3>
+                    <p>Crafting unforgettable moments with premium Indian event decor</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" onclick="handleSocialClick('Facebook', 'https://www.facebook.com')">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-logo">
+                        </a>
+                        <a href="https://www.instagram.com/kodre.mandap_contractor?igsh=MTl1amExdHgzdnhxdA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" onclick="handleSocialClick('Instagram', 'https://www.instagram.com/kodre.mandap_contractor?igsh=MTl1amExdHgzdnhxdA==')">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-logo">
+                        </a>
+                        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" onclick="handleSocialClick('Pinterest', 'https://www.pinterest.com')">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" class="social-logo">
+                        </a>
+                        <a href="https://wa.me/919850698989?text=Hi!%20I%20would%20like%20to%20inquire%20about%20your%20event%20decor%20services." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" onclick="handleSocialClick('WhatsApp', 'https://wa.me/919850698989')">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="social-logo">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#weddings">Wedding Decor</a></li>
+                        <li><a href="#corporate">Corporate Events</a></li>
+                        <li><a href="#services">Festival Decor</a></li>
+                        <li><a href="#services">Reception Setup</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919850698989" style="color: white; text-decoration: none;">+91 98506 98989</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:Kodredecorator@gmail.com" style="color: white; text-decoration: none;">Kodredecorator@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=18.533904,73.931702" target="_blank" style="color: white; text-decoration: none;">Get Directions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kodre Decorater. All rights reserved. | Premium Indian Event Decor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Quick Contact -->
+    <a href="https://wa.me/919850698989?text=Hi!%20I%20would%20like%20to%20inquire%20about%20your%20event%20decor%20services." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float" 
+       aria-label="Contact on WhatsApp">
+        <svg class="whatsapp-logo" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0010.052 0C4.495 0 .004 4.485 0 10.036a11.844 11.844 0 002.587 7.415l-.338 1.236 1.298-.336a11.849 11.849 0 007.505 2.648h.005c5.557 0 10.048-4.485 10.049-10.036a11.832 11.832 0 00-3.48-8.415"/>
+        </svg>
+    </a>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Get Your Free Quote</h3>
+                <button class="modal-close" onclick="closeQuoteForm()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="quick-quote-form" action="https://formspree.io/f/mgozkwab" method="POST" onsubmit="submitQuickQuote(event)">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="event-type" required>
+                            <option value="">Select Event Type</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="festival">Festival</option>
+                            <option value="reception">Reception</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" name="event-date" id="event-date" required>
+                        <label for="event-date" class="form-label">Event Date</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Brief description of your event..." rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="premium-btn primary full-width">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Quick Quote
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
