@@ -141,7 +141,7 @@ function initializeApp() {
     initializeForms();
     initializeAnimations();
     initializeScrollEffects();
-    console.log('Kodre Decorater initialized successfully!');
+    console.log('Kodre Mandap Contractor initialized successfully!');
 }
 
 // ===== NAVIGATION =====
@@ -489,7 +489,7 @@ function initializeGallery() {
         { id: 1, category: 'wedding', title: 'Royal Wedding Setup', description: 'Traditional mandap with modern elegance', customImage: 'royal-wedding-photo.jpg' },
         { id: 2, category: 'wedding', title: 'Lighting', description: 'Professional lighting setup and design', customImage: 'lighting-photo.jpg' },
         { id: 3, category: 'festival', title: 'Decoration of God', description: 'Traditional religious decoration setup', customImage: 'god-decoration-photo.jpg' },
-        { id: 4, category: 'wedding', title: 'Luxury Wedding Decor', description: 'Premium mandap design by Kodre Decorater', customImage: 'wedding-mandap-photo.jpg' },
+        { id: 4, category: 'wedding', title: 'Luxury Wedding Decor', description: 'Premium mandap design by Kodre Mandap Contractor', customImage: 'wedding-mandap-photo.jpg' },
         { id: 5, category: 'wedding', title: 'Decoration', description: 'Professional decoration setup and design', customImage: 'decoration-photo.jpg' },
         { id: 6, category: 'festival', title: 'Ganesh Festival', description: 'Traditional festival decoration', customImage: 'wedding-stage-photo.jpg' },
         { id: 7, category: 'festival', title: 'Ganpati Festival', description: 'Traditional Ganpati celebration setup', customImage: 'ganpati-festival-photo.jpg' }
@@ -699,7 +699,7 @@ function viewGalleryDetail(itemId) {
         { id: 1, category: 'wedding', title: 'Royal Wedding Setup', description: 'Traditional mandap with modern elegance', customImage: 'royal-wedding-photo.jpg' },
         { id: 2, category: 'wedding', title: 'Lighting', description: 'Professional lighting setup and design', customImage: 'lighting-photo.jpg' },
         { id: 3, category: 'festival', title: 'Decoration of God', description: 'Traditional religious decoration setup', customImage: 'god-decoration-photo.jpg' },
-        { id: 4, category: 'wedding', title: 'Luxury Wedding Decor', description: 'Premium mandap design by Kodre Decorater', customImage: 'wedding-mandap-photo.jpg' },
+        { id: 4, category: 'wedding', title: 'Luxury Wedding Decor', description: 'Premium mandap design by Kodre Mandap Contractor', customImage: 'wedding-mandap-photo.jpg' },
         { id: 5, category: 'wedding', title: 'Decoration', description: 'Professional decoration setup and design', customImage: 'decoration-photo.jpg' },
         { id: 6, category: 'festival', title: 'Ganesh Festival', description: 'Traditional festival decoration', customImage: 'wedding-stage-photo.jpg' },
         { id: 7, category: 'festival', title: 'Ganpati Festival', description: 'Traditional Ganpati celebration setup', customImage: 'ganpati-festival-photo.jpg' }
@@ -1113,4 +1113,4 @@ function trapFocus(element) {
     });
 }
 
-console.log('Kodre Decorater script loaded successfully!');
+console.log('Kodre Mandap Contractor script loaded successfully!');
